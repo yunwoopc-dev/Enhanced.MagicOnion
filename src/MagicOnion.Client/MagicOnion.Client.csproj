@@ -22,9 +22,12 @@
     <PackageReference Include="Grpc" Version="2.35.0" />
   </ItemGroup>
 
-  <ItemGroup>
-    <ProjectReference Include="..\MagicOnion.Abstractions\MagicOnion.Abstractions.csproj" />
-    <ProjectReference Include="..\MagicOnion.Shared\MagicOnion.Shared.csproj" />
+  <ItemGroup><!--    <ProjectReference Include="..\MagicOnion.Abstractions\MagicOnion.Abstractions.csproj" />-->
+<!--    <ProjectReference Include="..\MagicOnion.Shared\MagicOnion.Shared.csproj" />-->
+  
+<!--    <PackageReference Include="MagicOnion.Abstractions" Version="5.1.8" />-->
+  
+    <PackageReference Include="MagicOnion.Shared" Version="5.1.8" />
   </ItemGroup>
 
   <ItemGroup>

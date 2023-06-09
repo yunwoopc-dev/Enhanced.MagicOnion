@@ -15,9 +15,4 @@
     <Compile Include="..\PerformanceTest.Shared\**\*.cs" Exclude="**\obj\**;**\bin\**" LinkBase="Shared" />
   </ItemGroup>
 
-  <ItemGroup>
-    <ProjectReference Include="..\..\..\src\MagicOnion.Serialization.MemoryPack\MagicOnion.Serialization.MemoryPack.csproj" />
-    <ProjectReference Include="..\..\..\src\MagicOnion.Server\MagicOnion.Server.csproj" />
-  </ItemGroup>
-
 </Project>

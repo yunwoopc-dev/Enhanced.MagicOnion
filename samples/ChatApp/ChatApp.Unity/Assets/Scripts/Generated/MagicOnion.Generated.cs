@@ -114,6 +114,8 @@ namespace MagicOnion.Resolvers
 {
     using global::System;
     using global::MessagePack;
+
+    partial class PreserveAttribute : global::System.Attribute {}
     public class MagicOnionResolver : global::MessagePack.IFormatterResolver
     {
         public static readonly global::MessagePack.IFormatterResolver Instance = new MagicOnionResolver();
@@ -165,6 +167,23 @@ namespace MagicOnion.Resolvers
                 case 2: return new global::MessagePack.Formatters.ListFormatter<global::System.Int32>();
                 default: return null;
             }
+        }
+    }
+    /// <summary>Type hints for Ahead-of-Time compilation.</summary>
+    [MagicOnion.Resolvers.Preserve]
+    internal static class TypeHints
+    {
+        [MagicOnion.Resolvers.Preserve]
+        internal static void Register()
+        {
+            _ = MagicOnionResolver.Instance.GetFormatter<global::ChatApp.Shared.MessagePackObjects.JoinRequest>();
+            _ = MagicOnionResolver.Instance.GetFormatter<global::ChatApp.Shared.MessagePackObjects.MessageResponse>();
+            _ = MagicOnionResolver.Instance.GetFormatter<global::MagicOnion.DynamicArgumentTuple<global::System.Collections.Generic.List<global::System.Int32>, global::System.Collections.Generic.Dictionary<global::System.Int32, global::System.String>>>();
+            _ = MagicOnionResolver.Instance.GetFormatter<global::MessagePack.Nil>();
+            _ = MagicOnionResolver.Instance.GetFormatter<global::System.Collections.Generic.Dictionary<global::System.Int32, global::System.String>>();
+            _ = MagicOnionResolver.Instance.GetFormatter<global::System.Collections.Generic.List<global::System.Int32>>();
+            _ = MagicOnionResolver.Instance.GetFormatter<global::System.Int32>();
+            _ = MagicOnionResolver.Instance.GetFormatter<global::System.String>();
         }
     }
 }

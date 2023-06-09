@@ -30,7 +30,6 @@
 
     <ItemGroup>
       <ProjectReference Include="..\MagicOnion.Client\MagicOnion.Client.csproj" />
-      <ProjectReference Include="..\MagicOnion.Server\MagicOnion.Server.csproj" />
     </ItemGroup>
 
     <ItemGroup>
