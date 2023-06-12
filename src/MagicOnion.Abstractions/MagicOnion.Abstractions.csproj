@@ -14,11 +14,12 @@ MagicOnion.IService&lt;TSelf&gt;
 MagicOnion.IStreamingHub&lt;TSelf, TReceiver&gt;
 MagicOnion.UnaryResult&lt;TResult&gt;
 MagicOnion.IgnoreAttribute</Description>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
   </PropertyGroup>
 
   <ItemGroup>
     <PackageReference Include="Grpc.Core.Api" Version="2.35.0" />
-    <PackageReference Include="MessagePack" Version="2.2.85" />
+    <PackageReference Include="MessagePack" Version="2.3.112" />
   </ItemGroup>
 
   <ItemGroup>

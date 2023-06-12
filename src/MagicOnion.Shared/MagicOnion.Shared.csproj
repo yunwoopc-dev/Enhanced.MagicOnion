@@ -10,15 +10,13 @@
     <RootNamespace>MagicOnion</RootNamespace>
     <Description>Provides shared classes and interfaces used by MagicOnion server and client. $(MagicOnionPackageDescription)</Description>
     <LangVersion>8.0</LangVersion>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
   </PropertyGroup>
 
   <ItemGroup>
     <PackageReference Include="Grpc.Core.Api" Version="2.35.0" />
     <PackageReference Include="MagicOnion.Abstractions" Version="5.1.8" />
-  </ItemGroup>
-
-  <ItemGroup>
-<!--    <ProjectReference Include="..\MagicOnion.Abstractions\MagicOnion.Abstractions.csproj" />-->
+    <PackageReference Include="yw.magiconion.abstractions" Version="5.1.8" />
   </ItemGroup>
 
   <ItemGroup>
